@@ -1,0 +1,40 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { entryPath, formatDate, sortNewestFirst } from '../../lib/content';
+
+const articles = sortNewestFirst(
+  await getCollection('articles', ({ data }) => data.draft !== true),
+);
+---
+
+<BaseLayout
+  title="Articles"
+  description="Articles, essays, notes, and writeups from Eric Ritchey's personal playground."
+>
+  <section class="prose">
+    <p class="eyebrow">Articles</p>
+    <h1>Writing things down.</h1>
+    <p class="lede">
+      Notes, field reports, how-tos, and the occasional durable thought.
+    </p>
+  </section>
+
+  <section class="section">
+    <ul class="content-list">
+      {
+        articles.map((article) => (
+          <li>
+            <a class="content-row" href={`/articles/${entryPath(article)}/`}>
+              <span>
+                <h3>{article.data.title}</h3>
+                <p>{article.data.description}</p>
+              </span>
+              <span class="meta">{formatDate(article.data.pubDate)}</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</BaseLayout>

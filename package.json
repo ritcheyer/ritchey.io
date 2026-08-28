@@ -1,0 +1,29 @@
+{
+  "name": "ritchey.io",
+  "version": "1.0.0",
+  "description": "Eric Ritchey's personal playground.",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ritcheyer/ritchey.io.git"
+  },
+  "keywords": [
+    "personal-site",
+    "github-pages",
+    "astro"
+  ],
+  "author": "Eric Ritchey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ritcheyer/ritchey.io/issues"
+  },
+  "homepage": "https://ritchey.io",
+  "dependencies": {
+    "astro": "^7.2.4"
+  }
+}

@@ -1,0 +1,41 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Eric Ritchey',
+  description = 'A personal playground for notes, tools, collections, and useful public pages.',
+} = Astro.props;
+
+const pageTitle = title === 'Eric Ritchey' ? title : `${title} · Eric Ritchey`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="/">ritchey.io</a>
+        <nav class="nav" aria-label="Primary navigation">
+          <a href="/articles/">Articles</a>
+        </nav>
+      </header>
+      <main>
+        <slot />
+      </main>
+      <footer class="site-footer">
+        A small web playground for writing things down and giving useful things a URL.
+      </footer>
+    </div>
+  </body>
+</html>
