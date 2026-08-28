@@ -28,6 +28,8 @@
   },
   "optionalDependencies": {
     "@astrojs/compiler-binding-linux-x64-gnu": "^0.3.2",
+    "@bruits/satteri-linux-x64-gnu": "^0.10.5",
+    "@bruits/satteri-wasm32-wasi": "^0.10.5",
     "@esbuild/linux-x64": "^0.28.2",
     "@rolldown/binding-linux-x64-gnu": "^1.2.5",
     "@rolldown/binding-wasm32-wasi": "^1.2.5",
