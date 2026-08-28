@@ -25,5 +25,9 @@
   "homepage": "https://ritchey.io",
   "dependencies": {
     "astro": "^7.2.4"
+  },
+  "optionalDependencies": {
+    "@rolldown/binding-linux-x64-gnu": "^1.2.5",
+    "@rolldown/binding-wasm32-wasi": "^1.2.5"
   }
 }
