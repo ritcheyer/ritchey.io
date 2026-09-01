@@ -1,5 +1,5 @@
 ---
-title: "Personal playground"
+title: "Foundry"
 description: "A note for shaping this site as a flexible public workspace."
 section: "Site Notes"
 tags:

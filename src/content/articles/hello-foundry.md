@@ -1,10 +1,10 @@
 ---
-title: "Hello, playground"
+title: "Hello, foundry"
 description: "A first note about what this site is for and how it can grow."
 pubDate: 2026-08-28
 tags:
   - meta
-  - playground
+  - foundry
 ---
 
 This site is a place to keep small public things:

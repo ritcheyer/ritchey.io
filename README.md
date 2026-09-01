@@ -1,6 +1,6 @@
 # ritchey.io
 
-A small personal playground built with [Astro](https://astro.build/) and deployed
+A small foundry built with [Astro](https://astro.build/) and deployed
 with GitHub Pages.
 
 ## Run locally

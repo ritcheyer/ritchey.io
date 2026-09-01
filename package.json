@@ -1,7 +1,7 @@
 {
   "name": "ritchey.io",
   "version": "1.0.0",
-  "description": "Eric Ritchey's personal playground.",
+  "description": "Eric Ritchey's foundry.",
   "type": "module",
   "scripts": {
     "dev": "astro dev",

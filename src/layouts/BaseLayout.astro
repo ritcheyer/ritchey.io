@@ -8,7 +8,7 @@ interface Props {
 
 const {
   title = 'Eric Ritchey',
-  description = 'A personal playground for notes, tools, collections, and useful public pages.',
+  description = 'A foundry for notes, tools, and things worth a URL.',
 } = Astro.props;
 
 const pageTitle = title === 'Eric Ritchey' ? title : `${title} · Eric Ritchey`;
@@ -33,9 +33,6 @@ const pageTitle = title === 'Eric Ritchey' ? title : `${title} · Eric Ritchey`;
       <main>
         <slot />
       </main>
-      <footer class="site-footer">
-        A small web playground for writing things down and giving useful things a URL.
-      </footer>
     </div>
   </body>
 </html>
